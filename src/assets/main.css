@@ -1,0 +1,15 @@
+/* Global styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: "sonic-font";
+    src: url("./SonicLogoBold-MVl6x.ttf") format("truetype");
+}
+
+* {
+    font-family: "sonic-font";
+    color: white;
+}
