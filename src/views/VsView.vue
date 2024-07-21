@@ -12,11 +12,12 @@ const roundsStore = useRoundsStore();
     </div>
     <template v-else>
         <h2 class="text-center text-3xl">Choose the best!</h2>
-    
+
         <div class="w-full flex justify-center m-0">
-            <div class="m-0 w-fit px-5 py-1 bg-stone-900">
+            <div class="m-0 w-fit px-5 py-1 bg-stone-900 shadow-lg shadow-blue-950">
                 <p v-if="roundsStore.roundsLength > 1">
-                    Round {{ roundsStore.roundNumber }} - <span class="text-amber-400">{{ roundsStore.vsNumber }}</span> / {{ roundsStore.roundsLength }}
+                    Round {{ roundsStore.roundNumber }} - <span class="text-amber-400">{{ roundsStore.vsNumber }}</span>
+                    / {{ roundsStore.roundsLength }}
                 </p>
                 <p v-else>
                     Final Round

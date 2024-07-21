@@ -7,6 +7,7 @@ const roundsStore = useRoundsStore();
 
 <template>
     <h2 class="text-center text-3xl">Winner!</h2>
+    <p class="text-center">Take a screenshot and share it with your friends!</p>
     <div class="flex justify-center">
         <TrackComponent :track="roundsStore.winTracks[0]" mode="winner" />
     </div>
