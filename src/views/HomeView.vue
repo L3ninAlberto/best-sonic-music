@@ -19,13 +19,13 @@ import data from "../data.json";
 		<ul class="albums-slide">
 			<li v-for="album in data.albums" :key="`album-${album}`">
 				<img class="min-w-48 h-48 rounded-xl shadow-lg shadow-blue-950"
-					:src="`./src/assets/imgs/albums/${album}.jpg`" :alt="`sonic ${album} album`">
+					:src="`./src/assets/imgs/albums/${album}.webp`" :alt="`sonic ${album} album`">
 			</li>
 		</ul>
 		<ul class="albums-slide">
 			<li v-for="album in data.albums" :key="`album-repeat-${album}`">
 				<img class="min-w-48 h-48 rounded-xl shadow-lg shadow-blue-950"
-					:src="`./src/assets/imgs/albums/${album}.jpg`" :alt="`sonic ${album} album`">
+					:src="`./src/assets/imgs/albums/${album}.webp`" :alt="`sonic ${album} album`">
 			</li>
 		</ul>
 	</div>
