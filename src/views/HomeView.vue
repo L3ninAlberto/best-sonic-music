@@ -1,23 +1,14 @@
-<script setup>
-import data from "../data.json";
-
-console.log(data.tracks.slice(0, 5));
-
-const albums = ['adventure', 'forces', 'r', 'runners', 'cd'];
-
-</script>
-
 <template>
-	<p class="mx-16 text-center text-xl">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur recusandae maiores deleniti eius dignissimos quisquam, magnam quibusdam. Cupiditate recusandae ducimus provident alias.
+	<p class="mt-5 mx-16 text-center text-xl">
+		Sonic the Hedgehog has awesome music! Happy, epic, inspiring and emotional... Can you decide which one is the best?
 	</p>
 
-	<RouterLink to="/vs" class="self-center px-8 py-2 text-2xl bg-red-600 rounded-lg shadow-lg shadow-blue-950">
-		Comenzar
+	<RouterLink to="/vs" class="self-center px-14 py-2 text-2xl bg-red-600 rounded-lg shadow-lg shadow-blue-950 hover:bg-red-500">
+		Start
 	</RouterLink>
 
-	<ul class="grow py-12 flex gap-x-8 justify-center bg-white">
-		<li v-for="album in albums" :key="`album-${album}`">
+	<ul class="grow mt-5 py-12 flex gap-x-8 justify-center bg-white">
+		<li v-for="album in ['adventure', 'forces', 'r', 'runners', 'cd']" :key="`album-${album}`">
 			<img 
 			class="w-48 h-48 rounded-xl shadow-lg shadow-blue-950"
 			:src="`./src/assets/imgs/albums/${album}.jpg`" 
