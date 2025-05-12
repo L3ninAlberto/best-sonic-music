@@ -23,7 +23,7 @@ import data from "../data.json";
       <li v-for="album in data.albums" :key="`album-${album}`">
         <img
           class="min-w-48 h-48 rounded-xl shadow-lg shadow-blue-950"
-          :src="`./src/assets/imgs/albums/${album}.webp`"
+          :src="`imgs/albums/${album}.webp`"
           :alt="`sonic ${album} album`"
         />
       </li>
@@ -32,7 +32,7 @@ import data from "../data.json";
       <li v-for="album in data.albums" :key="`album-repeat-${album}`">
         <img
           class="min-w-48 h-48 rounded-xl shadow-lg shadow-blue-950"
-          :src="`./src/assets/imgs/albums/${album}.webp`"
+          :src="`imgs/albums/${album}.webp`"
           :alt="`sonic ${album} album`"
         />
       </li>
