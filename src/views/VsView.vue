@@ -11,8 +11,6 @@ const roundsStore = useRoundsStore();
         <p class="text-3xl -translate-y-6">Loading round...</p>
     </div>
     <template v-else>
-        <h2 class="text-center text-3xl">Choose the best!</h2>
-
         <div class="w-full flex justify-center m-0">
             <div class="m-0 w-fit px-5 py-1 bg-stone-900 shadow-lg shadow-blue-950">
                 <p v-if="roundsStore.roundsLength > 1">
@@ -25,7 +23,9 @@ const roundsStore = useRoundsStore();
             </div>
         </div>
 
-        <div class="w-full flex gap-x-10 justify-center items-center">
+        <h2 class="text-center text-lg lg:text-3xl">Choose the best!</h2>
+
+        <div class="w-full flex flex-col md:flex-row gap-10 justify-center items-center">
             <TrackComponent :track="roundsStore.currentRound[0]" mode="vs" />
             <span class="text-4xl">{{ "</>" }}</span>
             <TrackComponent :track="roundsStore.currentRound[1]" mode="vs" />
